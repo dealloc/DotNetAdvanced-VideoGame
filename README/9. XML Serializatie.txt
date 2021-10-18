@@ -1,0 +1,11 @@
+We gaan onze Player klasse uitbreiden met attributen zodat we onze Player klasse volledig kunnen wegschrijven naar een XML bestand.
+We zetten hiervoor het [XmlRoot] attribuut op onze Player klasse.
+Zorg ervoor dat het Player type als een attribuut van de Player tag geserializeerd word, de Inventory mag je negeren in XML (door de [XmlIgnore] attribute op de property te plaatsen).
+
+Voorzie een commando 'xml' in je spel dat de huidige speler opslaat naar een 'session.xml' file.
+
+Hints:
+- Je zal voor de Type enum de [XmlEnum] attribute op elke enum waarde moeten zetten zodat de serializer weet hoe hij de enum moet serializeren.
+- De XmlSerializer eist een parameterloze constructor, je gaat enkele klassen moeten aanpassen.
+- Properties die niet zowel een getter als een setter hebben worden niet mee geserializeerd, je zal dus enkele properties moeten updaten om correct te serializeren.
+- Omdat onze Weapon property als type de base klasse is moet je de XmlSerializer vertellen welke subklassen er mogelijks serialized kunnen worden (Sword & Wand), je doet dit via de XmlInclude attribute op de Player klasse te zetten.

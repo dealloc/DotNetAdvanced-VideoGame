@@ -1,4 +1,5 @@
-﻿using VideoGame.Console.Data;
+﻿using System.Xml.Serialization;
+using VideoGame.Console.Data;
 using VideoGame.Console.Entities;
 
 var playerName = Prompt("Enter a player name: ");
@@ -45,6 +46,13 @@ while (true)
     {
         weaponsRepository.Save(player.Weapon);
         playerRepository.Save(player);
+    }
+    else if (action == "xml")
+    {
+        using var output = new FileStream("session.xml", FileMode.Create);
+        var serializer = new XmlSerializer(typeof(Player));
+
+        serializer.Serialize(output, player);
     }
     else if (action == "stop")
     {
