@@ -10,6 +10,11 @@ namespace VideoGame.Console.Entities
     public class Player : Character, IDamageDealer
     {
         /// <summary>
+        /// De ID die in de databank opgeslagen is, of null als deze player nog niet opgeslagen is!
+        /// </summary>
+        public int? Id { get; set; }
+
+        /// <summary>
         /// Welk <see cref="PlayerType"/> onze speler momenteel speelt.
         /// We kiezen hier enkel 'get' zodat het type niet kan worden gewijzigd na aanmaken van de speler.
         /// </summary>

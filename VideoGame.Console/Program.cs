@@ -1,8 +1,11 @@
-﻿using VideoGame.Console.Entities;
+﻿using VideoGame.Console.Data;
+using VideoGame.Console.Entities;
 
 var playerName = Prompt("Enter a player name: ");
 var playerType = PromptPlayerType("Enter a class (warrior, warlock): ");
 var player = new Player(playerName, playerType);
+var playerRepository = new PlayerRepository();
+var weaponsRepository = new WeaponsRepository();
 
 // Dit start een oneindige loop (tot de speler het spel afsluit of tot we 'break' gebruiken).
 while (true)
@@ -37,6 +40,11 @@ while (true)
     {
         player.Health = 100;
         Console.WriteLine($"{player.Name} recovers all his health!");
+    }
+    else if (action == "save")
+    {
+        weaponsRepository.Save(player.Weapon);
+        playerRepository.Save(player);
     }
     else if (action == "stop")
     {

@@ -1,0 +1,10 @@
+In deze module gaan we een 'save' functionaliteit voorzien voor onze applicatie die ons toelaat om ons spel op te slaan in de databank.
+Maak een database aan op je computer genaamd 'VideoGame' en voer het SQL script Solution Items\setup_database.sql uit (dit zet de databank voor je op).
+Je kan dit script ook gebruiken om je database te 'resetten' als je opnieuw wil beginnen.
+Installeer ook al de NuGet package 'System.Data.SqlClient' voor de SQL Server klasses.
+
+Eerst breiden we de 'Player' klasse en de 'Weapon' klasse uit met een int? Id property.
+We maken de Id nullable zodat wanneer een instantie nog niet in de databank ziet we deze met null kunnen invullen (zo weten we of we iets moeten inserten of updaten).
+
+We maken een PlayerRepository aan die een Save methode heeft die zowel kan inserten als updaten van een 'Player' instantie, we doen hetzelfde voor 'Weapon' klasse met de 'WeaponRepository'.
+Voorzie dan een 'save' commando in de console applicatie dat je toelaat om de 'Player' instantie en bijbehorende 'Weapon' op te slaan.

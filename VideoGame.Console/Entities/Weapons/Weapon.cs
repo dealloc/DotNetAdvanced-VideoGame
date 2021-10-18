@@ -10,6 +10,11 @@ namespace VideoGame.Console.Entities.Weapons
     public abstract class Weapon : IDamageDealer
     {
         /// <summary>
+        /// De ID die in de databank opgeslagen is, of null als dit wapen nog niet opgeslagen is!
+        /// </summary>
+        public int? Id { get; set; }
+
+        /// <summary>
         /// Hoeveel damage deze <see cref="Weapon"/> doet.
         /// </summary>
         public float Damage { get; set; }
