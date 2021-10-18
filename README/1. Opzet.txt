@@ -1,0 +1,2 @@
+In dit project gaan we stap voor stap een videospel uitbouwen.
+Elke stap zal een module behandelen en tonen hoe deze dan zou passen in het groter geheel (in dit geval het spel dat we bouwen).
