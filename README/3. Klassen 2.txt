@@ -1,0 +1,12 @@
+We gaan een aantal van onze klassen nu 'refactoren' om onze code verder op te kuisen.
+Op dit moment zijn onze 'Sword' en onze 'Wand' klasse praktisch identiek.
+Door gebruik te maken van inheritance kunnen we onze klassen versimpelen gezien ze toch beiden eigenschappen delen.
+
+We gaan een 'Weapon' klasse maken die de 'Damage' property aanbied zodat we deze niet opnieuw moeten definieren.
+Daarna laten we zowel onze 'Sword' klasse als onze 'Wand' klasse overerven van onze nieuwe 'Weapon' klasse.
+
+Ook breiden we onze 'Player' klasse uit zodat onze speler in staat is om een 'Weapon' te gebruiken, afhankelijk van zijn klasse krijgt onze speler een Sword (als hij warrior speelt) of een Wand (als hij warlock speelt).
+Zorg er ook voor dat onze speler geen wapen kan hebben (=> nullable!).
+
+We merken ook dat onze 'Player' en onze 'Monster' klasse beiden een 'Health' en een 'Naam' eigenschap hebben.
+We gaan een basis klasse 'Character' maken die deze eigenschappen aanbied aan onze 'Player' en onze 'Monster' klasse.
