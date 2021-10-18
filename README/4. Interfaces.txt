@@ -1,0 +1,6 @@
+In de vorige module zagen we hoe we gebruik konden maken van inheritance om code te delen tussen verschillende klasses (zie 'Player', 'Character' en 'Monster').
+
+We zitten nu met een probleem: onze 'Player' klasse heeft een 'Weapon' om mee aan te vallen en schade te doen, maar onze 'Monster' klasse heeft geen wapen.
+Toch moet 'Monster' ook damage kunnen doen, een mogelijke oplossing is dat we een base klasse maken van iets dat schade kan doen, maar niet alle 'Character' instanties moeten per se damage kunnen doen.
+Daarom gaan we een interface maken die beschrijft hoe damage werkt zodat onafhankelijk van hoe iets schade doet (via 'Weapon' of iets anders), het concept blijft hetzelfde.
+We definieren onder 'VideoGame.Console.Contracts' de interface 'IDamageDealer' die beschrijft hoeveel damage de implementerende entities doen, implementeer deze daarna voor 'Player' en 'Monster'.

@@ -1,11 +1,12 @@
-﻿using VideoGame.Console.Entities.Weapons;
+﻿using VideoGame.Console.Contracts;
+using VideoGame.Console.Entities.Weapons;
 
 namespace VideoGame.Console.Entities
 {
     /// <summary>
     /// Onze <see cref="Player"/> klasse stelt de speler voor die momenteel aan het spelen is.
     /// </summary>
-    public class Player : Character
+    public class Player : Character, IDamageDealer
     {
         /// <summary>
         /// Welk <see cref="PlayerType"/> onze speler momenteel speelt.
@@ -37,6 +38,21 @@ namespace VideoGame.Console.Entities
                 Weapon = new Wand();
             }
         }
+
+        /// <summary>
+        /// We geven de schade terug die ons wapen kan doen, als Weapon null is geven we 0 terug.
+        /// </summary>
+        /// De ?. operator kan je schrijven als:
+        /// if (Weapon is null)
+        ///     return null;
+        /// else
+        ///     Weapon?.AmountOfDamage();
+        /// De ?? operator kan je ook schrijven als:
+        /// if (Weapon?.AmountOfDamage() is null)
+        ///     return null;
+        /// else
+        ///     Weapon?.AmountOfDamage();
+        public float AmountOfDamage() => Weapon?.AmountOfDamage() ?? 0;
 
         /// <summary>
         /// Het type speler, kan enkel <see cref="Warrior"/> of <see cref="Warlock"/> zijn.

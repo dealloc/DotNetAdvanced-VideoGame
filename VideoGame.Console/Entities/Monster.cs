@@ -1,9 +1,11 @@
-﻿namespace VideoGame.Console.Entities
+﻿using VideoGame.Console.Contracts;
+
+namespace VideoGame.Console.Entities
 {
     /// <summary>
     /// De <see cref="Monster"/> klasse stelt een monster voor waartegen de <see cref="Player"/> kan vechten.
     /// </summary>
-    public class Monster
+    public class Monster : IDamageDealer
     {
         /// <summary>
         /// Hoeveel leven het monster heeft op dit moment.
@@ -26,5 +28,11 @@
             Name = name;
             Health = health;
         }
+
+        /// <summary>
+        /// Op dit moment doen monsters standaard 10 damage.
+        /// </summary>
+        /// <returns></returns>
+        public float AmountOfDamage() => 10;
     }
 }
