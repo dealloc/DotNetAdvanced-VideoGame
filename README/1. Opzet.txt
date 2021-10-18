@@ -1,2 +1,9 @@
 In dit project gaan we stap voor stap een videospel uitbouwen.
 Elke stap zal een module behandelen en tonen hoe deze dan zou passen in het groter geheel (in dit geval het spel dat we bouwen).
+
+We hebben een project "VideoGame.Console" hetgeen de console interface zal zijn voor ons spel op dit moment.
+Bij het opstarten kan een speler een naam kiezen en kiezen of hij een warrior of een warlock speelt.
+
+Daarna krijgt de speler een prompt waar hij kan kiezen wat hij zal doen, op dit moment ondersteunen we 1 optie: stop
+
+Wanneer het programma afsluit printen we nog een boodschap uit.
