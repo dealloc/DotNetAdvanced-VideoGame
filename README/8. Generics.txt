@@ -1,0 +1,11 @@
+We gaan een BaseRepository klasse aanmaken die de gemeenschappelijke code van onze repository klasses moet verminderen.
+Om te zorgen dat we zoveel mogelijk code kunnen hergebruiken in onze subklasses en tegelijk het gebruik van object vermijden,
+gaan we onze BaseRepository een generieke klasse maken.
+
+Om te beginnen maken we een klasse 'Entity' aan die een entiteit voorstelt die we kunnen opslaan in de database.
+Deze Entity klasse bevat enkel een nullable int Id.
+
+We laten dan zowel de 'Character', 'Weapon' en 'Item' klasse erven van 'Entity', dit zorgt ervoor dat we een gemeenschappelijke base klasse hebben voor alles wat in de databank moet.
+
+We kunnen nu in onze BaseRepository specifieren dat alle klasses die we meegeven als type parameter moeten erven van 'Entity'
+dit laat ons dan toe om te werken met alle subklassen van Entity. We hebben nu genoeg informatie om de Save functie van de repositories in de BaseRepository klasse te moven.

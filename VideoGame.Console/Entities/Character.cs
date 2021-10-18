@@ -1,6 +1,6 @@
 ﻿namespace VideoGame.Console.Entities
 {
-    public abstract class Character
+    public abstract class Character : Entity
     {
         /// <summary>
         /// Hoeveel leven onze <see cref="Character"/> op dit moment nog heeft.
