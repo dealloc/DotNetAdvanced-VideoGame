@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "README", "README", "{50AC7BEF-5C67-4285-BA56-A9265D6AA113}"
 	ProjectSection(SolutionItems) = preProject
 		README\1. Opzet.txt = README\1. Opzet.txt
+		README\2. Klassen.txt = README\2. Klassen.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGame.Console", "VideoGame.Console\VideoGame.Console.csproj", "{DD2E91B4-EEA6-4A87-95C4-AAB1F1AB3049}"

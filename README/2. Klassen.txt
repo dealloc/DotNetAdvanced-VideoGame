@@ -1,0 +1,22 @@
+Nu we een basis console applicatie hebben, gaan we beginnen met ons programma te modelleren.
+
+We hebben al vastgelegd dat er 2 classes zijn waaruit de speler kan kiezen: warrior & warlock
+We beginnen met een klasse "Player" te modelleren die de speler zal voorstellen tijdens zijn avontuur.
+
+Onder de namespace "VideoGame.Console.Entities" maken we deze klasse aan, een speler heeft volgende properties:
+- Health: een float die voorstelt hoeveel 'leven' de speler nog overheeft dit word standaard 100
+- Type: of onze speler een warrior of een warlock speelt (we gebruiken hier een enum die we definieren in dezelfde klasse).
+- Name: de naam van onze speler zodat we hiernaar kunnen refereren.
+
+Eenmaal aangemaakt kan de naam van onze speler natuurlijk niet meer wijzigen, hetzelfde geld voor het type dat de speler kiest.
+
+Ook gaan we onder "VideoGame.Console.Entities" een klasse "Monster" maken die een monster zal voorstellen waartegen de speler kan vechten.
+Een monster heeft volgende eigenschappen:
+- Health: een float die voorstelt hoeveel 'leven' het monster nog overheeft.
+- Name: de naam van het monster, zodat we weten waartegen de speler aan het vechten is.
+
+Uiteraard heeft de speler iets nodig waarmee we kunnen vechten tegen het monster, dus we maken een klasse Sword aan met volgende eigenschappen:
+- Damage: een float die voorstelt hoeveel schade het zwaard doet per keer.
+
+Voor onze warlock spelers hebben we de klasse Wand met volgende eigenschappen:
+- Damage: een float die voorstelt hoeveel schade de staf doet per keer.
