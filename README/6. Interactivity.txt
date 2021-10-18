@@ -1,0 +1,2 @@
+In deze module gaan we vooral het Console project verder uit breiden
+om gebruik te maken van de functionaliteit die we hebben voorzien in onze voorgaande modules.

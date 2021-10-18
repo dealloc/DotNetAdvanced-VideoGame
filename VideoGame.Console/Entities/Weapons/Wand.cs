@@ -5,5 +5,9 @@
     /// </summary>
     public class Wand : Weapon
     {
+        public Wand()
+        {
+            Damage = 4.5F;
+        }
     }
 }

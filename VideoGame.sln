@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "README", "README", "{50AC7B
 		README\3. Klassen 2.txt = README\3. Klassen 2.txt
 		README\4. Interfaces.txt = README\4. Interfaces.txt
 		README\5. Collections.txt = README\5. Collections.txt
+		README\6. Interactivity.txt = README\6. Interactivity.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoGame.Console", "VideoGame.Console\VideoGame.Console.csproj", "{DD2E91B4-EEA6-4A87-95C4-AAB1F1AB3049}"
