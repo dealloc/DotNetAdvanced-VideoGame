@@ -1,0 +1,9 @@
+Het volgende wat we gaan implementeren is een inventory voor onze player.
+Natuurlijk kan onze speler meer dan 1 item tegelijk bij hebben, dus we gaan moeten werken met lijsten.
+In C# is de meest gebruikte collection de List<T> klasse, in principe een automatisch groeiende array.
+
+We beginnen met een Item klasse te maken die 1 methode heeft: void Use(Player player) deze word aangeroepen wanneer de speler het item wil gebruiken (bv health potions etc).
+We maken ook een subklasse HealthPotion en DamagePotion die de speler extra health geven en meer damage respectievelijk.
+Breid ook de 'Player' klasse uit zodat de speler een lijst heeft van 'Item' onder de eigenschap 'Inventory'
+
+Via de 'Add' en 'Remove' functies kunnen we 'Item' toevoegen en verwijderen (respectievelijk) uit de inventory van de speler.

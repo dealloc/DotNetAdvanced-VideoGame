@@ -1,4 +1,5 @@
 ﻿using VideoGame.Console.Contracts;
+using VideoGame.Console.Entities.Items;
 using VideoGame.Console.Entities.Weapons;
 
 namespace VideoGame.Console.Entities
@@ -18,6 +19,11 @@ namespace VideoGame.Console.Entities
         /// Het wapen dat onze speler gebruikt, als deze property op null staat heeft de speler geen wapen equipped en doet hij 0 damage.
         /// </summary>
         public Weapon? Weapon { get; set; }
+
+        /// <summary>
+        /// De <see cref="Item"/>s die de speler momenteel bij zich heeft die hij kan gebruiken.
+        /// </summary>
+        public List<Item> Inventory { get; set; } = new List<Item>();
 
         /// <summary>
         /// De constructor van onze speler klasse.
